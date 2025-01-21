@@ -7,7 +7,7 @@
 
 }
 body{
-  border: 2px dashed red;
+
 }
 section{
   width: 1440px;
@@ -83,8 +83,58 @@ section{
   box-shadow: 5px 5px rgba(151, 151, 151, 0.397);
   background-color: rgb(0, 0, 0);
 }
+/* card -section  */
+h4{
+  text-align: center; 
+  font-size: 46px; 
+  font-weight: 700;
+}
+.card-section{
+  display: flex;
+  gap: 28px;
+}
+.card{
+  width: 367px;
+  height: 476px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 35px;
 
-
+}
+.card>h3{
+  font-size: 24px;
+  font-weight: 700;
+}
+.card>p{
+  color: rgb(128, 128, 128);
+}
+.card>a{
+  text-decoration: none;
+}
+.card-1{
+  background:  linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  border-radius: 18px;
+}
+.card-1>a{
+  color: rgb(100, 200, 255);
+}
+.card-2{
+  background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  border-radius: 18px;
+}
+.card-2>a{
+  color: rgb(240, 170, 0);
+}
+.card-3{
+  background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  border-radius: 18px;
+}
+.card-3>a{
+  color: rgb(135, 0, 255);
+}
 
 
 
@@ -95,6 +145,7 @@ section{
 
 
 @media only screen and (max-width:576px){
+  /* navbar */
   nav{
     width:100%;
     border-bottom: 1px solid yellow;
@@ -119,14 +170,11 @@ section{
   .icon{
     visibility: visible;
   }
+  /* banner */
   .banner{
     display: flex;
     flex-direction: column;
-    width:100%;
-    margin: 20px;
-  }
-  nav{
-   
+    width:90%;
   }
   .icon i{
     font-size: 30px;
@@ -135,6 +183,9 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .banner-image>img{
+    width: 80%;
   }
   .banner{
     display: flex;
@@ -152,14 +203,35 @@ section{
     margin-top: 20px;
     text-align: center;
   }
-  .heading-section img{
-    width: 200px;
-    margin: 0 auto;
-    
-  }
 .heading-section>p{
     width:357px;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
+    margin: 10px auto;
+}
+/* card section  */
+h4{
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+.card-section{
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  height: 321px;
+  padding: 20px;
+  gap: 10px;
+}
+.card{
+  width: 100%;
+  gap: 10px;
+  padding: 20px;
+}
+.card>p{
+  font-size: 10px;
+  padding: 36px 28px 36px 28px;
+  padding-right: 60px;
+  padding-left: 60px;
 }
