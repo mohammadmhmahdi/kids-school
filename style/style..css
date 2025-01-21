@@ -1,0 +1,160 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+  border-bottom: 1px solid yellow;
+}
+section{
+  width: 1440px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.options > li{
+  list-style-type: none;
+  margin: 20px;
+}
+.contact{
+  justify-content: center;
+  align-items: center;
+}
+.contact>button{
+  background-color: rgb(254, 163, 1);
+  width: 197px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.icon{
+  visibility: hidden;
+}
+.banner{
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+.heading-section{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+.heading-section>h1{
+  font-size: 56px;
+  font-weight: 700;
+  width: 640px;
+}
+.heading-section>p{
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(17, 17, 17);
+  width: 640px;
+}
+.heading-section>button{
+  width: 197px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.heading-section>button:hover{
+  box-shadow: 5px 5px rgba(151, 151, 151, 0.397);
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:576px){
+  nav{
+    width: 100%;
+    margin: 10px auto;
+  }
+  .options{
+    display: none;
+  }
+  .contact{
+    display: none;
+  }
+  .logo{
+    width: 46px;
+    height: 46px;
+    margin: 10px 20px;
+  }
+  .logo>h2{
+    display: none;
+  }
+  .icon{
+    visibility: visible;
+  }
+  .banner{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: 20px;
+  }
+  nav{
+    display: flex;
+    margin: 10px auto;
+    justify-content:center;
+    align-items: center;
+  }
+  .icon i{
+    font-size: 30px;
+    margin: 20px;
+  }
+  .banner{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .heading-section{
+    align-items: center;
+  }
+  .heading-section>h1{
+    font-size: 32px;
+    font-weight: 700;
+    width: 357px;
+    margin: 5px auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .heading-section>img{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+.heading-section>p{
+    width:357px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
