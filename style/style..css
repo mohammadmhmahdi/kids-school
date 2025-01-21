@@ -4,9 +4,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+
 }
-nav{
-  border-bottom: 1px solid yellow;
+body{
+  border: 2px dashed red;
 }
 section{
   width: 1440px;
@@ -95,8 +96,12 @@ section{
 
 @media only screen and (max-width:576px){
   nav{
-    width: 100%;
-    margin: 10px auto;
+    width:100%;
+    border-bottom: 1px solid yellow;
+    display: flex;
+    padding: 15px;
+    justify-content:center;
+    align-items: center;
   }
   .options{
     display: none;
@@ -107,7 +112,6 @@ section{
   .logo{
     width: 46px;
     height: 46px;
-    margin: 10px 20px;
   }
   .logo>h2{
     display: none;
@@ -122,14 +126,15 @@ section{
     margin: 20px;
   }
   nav{
-    display: flex;
-    margin: 10px auto;
-    justify-content:center;
-    align-items: center;
+   
   }
   .icon i{
     font-size: 30px;
-    margin: 20px;
+  }
+  .banner-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .banner{
     display: flex;
@@ -143,14 +148,14 @@ section{
     font-size: 32px;
     font-weight: 700;
     width: 357px;
-    margin: 5px auto;
+    margin: 0 auto;
     margin-top: 20px;
     text-align: center;
   }
-  .heading-section>img{
-    width: 70%;
+  .heading-section img{
+    width: 200px;
     margin: 0 auto;
-    padding: 10px;
+    
   }
 .heading-section>p{
     width:357px;
